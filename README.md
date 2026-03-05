@@ -57,7 +57,7 @@ Initial cleaning was performed in **Excel**, followed by deeper preprocessing an
 - `product_first_sold_date`: 197 missing values — cannot be replaced with a string, so a new `product_first_sold_period` column was created with 5-year era bins (*Early 1990s*, *Late 1990s*, *Early 2000s*, *Late 2000s*, *Recent Years*, *Unknown*). A companion `product_longevity` column (years since first sold, as of 2017) was also added.
 - Two additional customer-level aggregate columns were computed and stored in the Transactions table for use in Tableau: `customer_transaction_count` and `customer_transaction_avg_amount`.
 
-[View the Preprocessing Script](Project1_-_4_Preprocessing.sql)
+[View the Preprocessing Script](99Bikes%20-%204_Preprocessing.sql)
 
 ---
 
@@ -84,7 +84,7 @@ Exploratory analysis was performed in **SQL Server**, filtering all results to `
 - Car ownership and past purchase frequency show no significant impact on sales volume.
 - Wealth segment: Mass Customers represent the largest buying group.
 
-[View the Exploratory Analysis Script](Project1_-_5_ExploratoryAnalysis.sql)
+[View the Exploratory Analysis Script](99Bikes%20-%205_ExploratoryAnalysis.sql)
 
 ---
 
@@ -108,6 +108,9 @@ Two Tableau dashboards were built:
 - Sales by Job Industry
 - Sales by State (map)
 - Sales by Postcode
+
+[View the Dashboard through Tableau](99Bikes%20-%205_ExploratoryAnalysis.sql)
+[View the Dashboard online](https://public.tableau.com/views/99Bikes-SalesCustomerSegmentationAnalysis/CustomersDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
